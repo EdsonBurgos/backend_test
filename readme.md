@@ -1,6 +1,6 @@
 # PRUEBA TÉCNICA CASA MECATE
 
-## BackEnd - REACT
+## BackEnd - Python w/ Flask
 
 Proyecto creado para la prueba técnica de Casa Mecate. Fue un reto, me divertí aprendiendo a utilizar python con flask y
 agradezco

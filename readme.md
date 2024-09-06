@@ -92,3 +92,18 @@ Una vez teniendo el servidor listo vamos a hacer lo siguiente
     * dir_name: Nombre del directorio del proyecto clonado
 * Habilita tu host con el siguiente comando y el nombre de tu archivo conf`sudo a2ensite [nombre].conf`
 * Reinicia apache y tendrás listo tu proyecto
+
+## Configuración de la base de datos
+El proyecto trabaja con una base de datos MySQL versión 8+ preferentemente, puedes seguir el siguiente [tutorial](https://tecadmin.net/how-to-install-mysql-server-on-ubuntu-24-04/).
+
+Durante la configuración de mysql server estableces la contraseña root, es importante recordarla
+
+Una ves terminado vamos a crear la base de datos, ayudate de un Gestor de Base de datos, puede ser Mysql workbench, dbeaver ce, etc.
+
+* Crea una base de datos
+  * Recomiendo mantener el nombre de 'mecate_airports_management'
+* Abre un archivo sql dentro del gestor y ejecuta el archivo `mecate_airports_management.sql`
+  * Ruta: `[project_dir]/db/mecate_airports_management.sql`
+* Creadas las tablas, configurar datos en el archivo de configuración
+  * `[project_dir]/app/config/database.py`
+  * ![img.png](img.png)
